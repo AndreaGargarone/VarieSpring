@@ -2,6 +2,7 @@ package it.andreagargarone.injection.annotation;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Service;
 
 
@@ -16,7 +17,7 @@ public class SendMsg {
 	//@Qualifier("MessaggioSms")
 	Messaggio sms;
 	
-	public void setPippo(MessaggioMail messageM) {
+	public void setMail(MessaggioMail messageM) {
 		this.mail = messageM;
 	}
 
