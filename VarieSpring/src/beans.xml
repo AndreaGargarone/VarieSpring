@@ -1,0 +1,30 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+	<!-- 
+	<bean id="messageBean" class="it.andreagargarone.Message"/>
+	<bean id="helloBean" class="it.andreagargarone.HelloWorld">
+		<property name="message" ref="messageBean"/>
+	</bean>
+	-->
+	<!-- <context:component-scan base-package="it.andreagargarone" />-->
+	
+	
+	<!-- ********************************************************************************* -->
+	<!--
+	<bean id="messaggioMail" class="it.andreagargarone.injection.MessaggioMail"/>
+	<bean id="messaggioSMS" class="it.andreagargarone.injection.MessaggioSms"/>
+	
+	<bean id="msg" class="it.andreagargarone.injection.SendMsg">
+		<property name="pippo" ref="messaggioMail" />
+		 <property name="pippo" ref="messaggioSMS" />
+	</bean>
+-->
+	<context:component-scan base-package="it.andreagargarone.injection.annotation" />
+	
+</beans>
